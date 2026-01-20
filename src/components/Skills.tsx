@@ -1,19 +1,25 @@
 const skills = [
-  { name: "React", level: 90, category: "Frontend" },
-  { name: "Next.js", level: 85, category: "Frontend" },
-  { name: "TypeScript", level: 85, category: "Languages" },
-  { name: "JavaScript", level: 95, category: "Languages" },
-  { name: "Node.js", level: 80, category: "Backend" },
-  { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "Python", level: 75, category: "Languages" },
-  { name: "PostgreSQL", level: 70, category: "Backend" },
-  { name: "Git", level: 85, category: "Tools" },
-  { name: "Docker", level: 65, category: "Tools" },
-  { name: "AWS", level: 60, category: "Cloud" },
-  { name: "Figma", level: 70, category: "Design" },
+  { name: "Video Editing", level: 95, category: "Production" },
+  { name: "Film Directing", level: 90, category: "Production" },
+  { name: "Visual Effects (VFX)", level: 85, category: "Production" },
+  { name: "Sound Design", level: 80, category: "Production" },
+  { name: "Color Grading", level: 85, category: "Production" },
+  { name: "Adobe Premiere Pro", level: 95, category: "Software" },
+  { name: "Adobe After Effects", level: 90, category: "Software" },
+  { name: "DaVinci Resolve", level: 80, category: "Software" },
+  { name: "Adobe Photoshop", level: 85, category: "Software" },
+  { name: "Graphic Design", level: 85, category: "Design" },
+  { name: "Poster Design", level: 90, category: "Design" },
+  { name: "Visual Branding", level: 80, category: "Design" },
+  { name: "Cinematography", level: 75, category: "Technical" },
+  { name: "Shot Composition", level: 85, category: "Technical" },
+  { name: "Storytelling", level: 90, category: "Technical" },
+  { name: "Basic Web Design", level: 70, category: "Other" },
+  { name: "Team Collaboration", level: 90, category: "Other" },
+  { name: "Creative Planning", level: 85, category: "Other" },
 ];
 
-const categories = ["Frontend", "Backend", "Languages", "Tools", "Cloud", "Design"];
+const categories = ["Production", "Software", "Design", "Technical", "Other"];
 
 export default function Skills() {
   return (
@@ -57,10 +63,10 @@ export default function Skills() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-6">
-            And always learning more technologies...
+            Always expanding my creative toolkit...
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["GraphQL", "Redis", "MongoDB", "Rust", "Go", "Kubernetes"].map(
+            {["Blender 3D", "Motion Graphics", "Audio Mixing", "Storyboarding", "Script Writing", "Event Coverage"].map(
               (tech) => (
                 <span
                   key={tech}

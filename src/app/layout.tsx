@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name | Portfolio",
-  description: "Welcome to my portfolio website. I'm a developer passionate about creating amazing digital experiences.",
-  keywords: ["portfolio", "developer", "web development", "react", "nextjs"],
-  authors: [{ name: "Your Name" }],
+  title: "Yuan Exequiel R. Evangelista | Multimedia Portfolio",
+  description: "Award-winning multimedia artist, video editor, and film director. Experienced in short films, visual effects, and creative production.",
+  keywords: ["portfolio", "video editor", "film director", "multimedia", "visual effects", "short films"],
+  authors: [{ name: "Yuan Exequiel R. Evangelista" }],
   openGraph: {
-    title: "Your Name | Portfolio",
-    description: "Welcome to my portfolio website",
+    title: "Yuan Exequiel R. Evangelista | Multimedia Portfolio",
+    description: "Award-winning multimedia artist and video editor",
     type: "website",
   },
 };

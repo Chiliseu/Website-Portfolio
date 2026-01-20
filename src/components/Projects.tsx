@@ -3,64 +3,73 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Siyete Kinse (Short Film)",
     description:
-      "A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    image: "/projects/project1.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "Award-winning short film that won Best Picture, Best Editing, Best Sound Design, Best Visual Effects, Best Production Design, and Best Makeup at PUPQC Multimedia Film Festival.",
+    tags: ["Film", "Directing", "Editing", "VFX", "Award-Winning"],
+    emoji: "🏆",
+    liveUrl: "https://www.youtube.com/watch?v=aDWiGH37jzo",
+    category: "Film",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Siyete Kinse - Official Trailer",
     description:
-      "A collaborative task management application with real-time updates and team features.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "/projects/project2.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "The official trailer for Siyete Kinse, showcasing the visual style and narrative tension of the award-winning short film.",
+    tags: ["Trailer", "Editing", "Promotion"],
+    emoji: "🎬",
+    liveUrl: "https://www.youtube.com/watch?v=PUpaSBtCeMQ",
+    category: "Film",
   },
   {
     id: 3,
-    title: "AI Content Generator",
+    title: "Siyete Kinse - Teaser",
     description:
-      "An AI-powered content generation tool that helps create blog posts, social media content, and more.",
-    tags: ["Python", "OpenAI", "FastAPI", "React"],
-    image: "/projects/project3.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "Award-winning teaser (2nd Place Best Teaser) for the short film Siyete Kinse at PUPQC Multimedia Film Festival.",
+    tags: ["Teaser", "Editing", "Award-Winning"],
+    emoji: "🎥",
+    liveUrl: "https://www.youtube.com/watch?v=tcUAa98VaX8",
+    category: "Film",
   },
   {
     id: 4,
-    title: "Portfolio Dashboard",
+    title: "Floodchild (Short Film)",
     description:
-      "A financial portfolio tracking dashboard with real-time market data and analytics.",
-    tags: ["Next.js", "Chart.js", "API", "Tailwind"],
-    image: "/projects/project4.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A compelling short film exploring dramatic themes with cinematic storytelling and professional production quality.",
+    tags: ["Film", "Directing", "Storytelling"],
+    emoji: "🌊",
+    liveUrl: "https://www.youtube.com/watch?v=iDwmwe0P-tQ",
+    category: "Film",
   },
   {
     id: 5,
-    title: "Social Media App",
+    title: "/Confess (Short Film)",
     description:
-      "A modern social media platform with posts, comments, likes, and real-time messaging.",
-    tags: ["React Native", "Firebase", "Redux", "Node.js"],
-    image: "/projects/project5.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A narrative short film featuring engaging storytelling, creative direction, and polished post-production.",
+    tags: ["Film", "Directing", "Editing"],
+    emoji: "🎭",
+    liveUrl: "https://www.youtube.com/watch?v=kLJwotblzCo&t=929s",
+    category: "Film",
   },
   {
     id: 6,
-    title: "Learning Management System",
+    title: "Honkai Star Rail Edit",
     description:
-      "An educational platform with courses, quizzes, progress tracking, and certificates.",
-    tags: ["Next.js", "Prisma", "AWS S3", "Stripe"],
-    image: "/projects/project6.png",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A dynamic video edit featuring gameplay and cinematic moments from Honkai Star Rail with creative visual effects.",
+    tags: ["Gaming", "Edit", "VFX", "Motion Graphics"],
+    emoji: "🎮",
+    liveUrl: "https://www.youtube.com/watch?v=HPYksfkoVqM&t=5s",
+    category: "Edit",
   },
+];
+
+const facebookEdits = [
+  { id: 1, url: "https://www.facebook.com/reel/573600078400161" },
+  { id: 2, url: "https://www.facebook.com/reel/1476643279857464" },
+  { id: 3, url: "https://www.facebook.com/reel/956277386668028" },
+  { id: 4, url: "https://www.facebook.com/reel/1203152064851087" },
+  { id: 5, url: "https://www.facebook.com/reel/1058282313005775" },
+  { id: 6, url: "https://www.facebook.com/reel/311992995154783" },
 ];
 
 export default function Projects() {
@@ -68,12 +77,12 @@ export default function Projects() {
     <section id="projects" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          My <span className="text-gradient">Projects</span>
+          My <span className="text-gradient">Works</span>
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-4"></div>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project is a unique piece of
-          development showcasing my skills and passion.
+          A showcase of my video editing, film directing, and multimedia production work.
+          From award-winning short films to creative video edits.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,14 +92,12 @@ export default function Projects() {
               className="bg-slate-800/50 border border-slate-700 rounded-xl overflow-hidden card-hover group"
             >
               <div className="relative h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-                <span className="text-6xl opacity-50">🚀</span>
-                {/* Uncomment when you have actual images */}
-                {/* <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                /> */}
+                <span className="text-6xl">{project.emoji}</span>
+                {project.id === 1 && (
+                  <div className="absolute top-3 right-3 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full">
+                    🏆 Best Picture
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
               </div>
 
@@ -98,7 +105,7 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors duration-200">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
                   {project.description}
                 </p>
 
@@ -118,41 +125,16 @@ export default function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                    className="flex items-center gap-1 text-sm text-red-400 hover:text-red-300 transition-colors duration-200"
                   >
                     <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    <svg
-                      className="w-4 h-4"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                        clipRule="evenodd"
-                      />
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
-                    Code
+                    Watch on YouTube
                   </a>
                 </div>
               </div>
@@ -160,20 +142,39 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* Facebook Edits Section */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            Social Media <span className="text-gradient">Edits</span>
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {facebookEdits.map((edit) => (
+              <a
+                key={edit.id}
+                href={edit.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center justify-center card-hover group"
+              >
+                <span className="text-4xl mb-2">📱</span>
+                <span className="text-sm text-gray-400 group-hover:text-blue-400 transition-colors duration-200">
+                  Edit #{edit.id}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center mt-12">
           <a
-            href="https://github.com"
+            href="https://www.youtube.com/@yuanexequiel"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-gray-500 rounded-full font-semibold hover:bg-slate-800 transition-colors duration-200"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-full font-semibold transition-colors duration-200"
           >
-            View More on GitHub
+            View More on YouTube
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                fillRule="evenodd"
-                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                clipRule="evenodd"
-              />
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </a>
         </div>

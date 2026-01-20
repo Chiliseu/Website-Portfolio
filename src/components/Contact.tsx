@@ -56,10 +56,10 @@ export default function Contact() {
             <p className="text-gray-400">
               Don&apos;t like forms? Send me an email directly at{" "}
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:yuanexequielevangelista03@gmail.com"
                 className="text-blue-400 hover:text-blue-300"
               >
-                your.email@example.com
+                yuanexequielevangelista03@gmail.com
               </a>
             </p>
 
@@ -82,7 +82,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white">your.email@example.com</p>
+                  <p className="text-white">yuanexequielevangelista03@gmail.com</p>
                 </div>
               </div>
 
@@ -110,7 +110,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Location</p>
-                  <p className="text-white">Your City, Country</p>
+                  <p className="text-white">Quezon City, Philippines</p>
                 </div>
               </div>
 
@@ -126,13 +126,13 @@ export default function Contact() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Availability</p>
-                  <p className="text-white">Open to opportunities</p>
+                  <p className="text-gray-400 text-sm">Mobile</p>
+                  <p className="text-white">09812399553</p>
                 </div>
               </div>
             </div>
